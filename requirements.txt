@@ -1,0 +1,8 @@
+pyinstaller
+pyaesm
+urllib3
+requests
+asyncio
+Thread
+aiohttp
+discord
