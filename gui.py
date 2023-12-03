@@ -17,19 +17,19 @@ def Mbox(title, text, style):
 def sendToWebhook():
     avurl = "https://cdn.discordapp.com/attachments/1179468939101745152/1180208308221661256/Your_paragraph_text_1.png?ex=657c95a3&is=656a20a3&hm=3ca435b0248245694ad79cffd78864007252382566c4b48b6fea7808ee45dd96&"
     try:
-        async def anything(webhook2):
+        async def anything(webhookE):
             async with aiohttp.ClientSession() as session:
                 message = "               Webhook Working \n\nCxG Made By AnonCx & DarkBlade"
                 user = "CxGrabber"
                 numBr = 1
                 for i in range(1):
                     numBr = numBr + 1
-                    webhook = Webhook.from_url(webhook2, session=session)
+                    webhook = Webhook.from_url(webhookE, session=session)
                     embed = discord.Embed(
                         title=message)
                     await webhook.send(embed=embed, username=user, avatar_url=avurl)
 
-        webhook2 = WebhookE.get()
+        webhookE = WebhookE.get()
 
         loop = asyncio.new_event_loop()
         loop.run_until_complete(anything(webhook2))
